@@ -1,9 +1,9 @@
 <?php
 
-namespace blackfighty;
+namespace OguzhanUmutlu;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\command\Command;
+use pocketmine\command\CommOand;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\event\Listener;
@@ -17,7 +17,7 @@ use pocketmine\permission\Permission;
 class Main extends PluginBase implements Listener{
 	
 	public function onEnable(){
-		$this->getLogger()->info("Plugin enabled. by blackfighty");
+		$this->getLogger()->info("Plugin enabled. by OguzhanUmutlu");
 		
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		@mkdir($this->getDataFolder());
